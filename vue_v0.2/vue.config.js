@@ -7,7 +7,7 @@
     devServer:{
         proxy:{
             '/':{
-                target:'http://172.20.10.6:8888/',
+                target:'http://172.20.10.8:8080/',
                 changeOrigin:true,
                 ws:true
             },

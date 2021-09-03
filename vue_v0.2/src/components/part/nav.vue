@@ -32,34 +32,31 @@
               <span>用户管理</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="3-1" @click="goPage('member')">会员管理</el-menu-item>
+              <el-menu-item index="3-1" @click="goPage('member')">用户列表</el-menu-item>
             </el-menu-item-group>
-            <el-menu-item-group>
+         <!--   <el-menu-item-group>
               <el-menu-item index="3-2" @click="goPage('address')">收货地址</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group>
+            </el-menu-item-group> -->
+         <!--   <el-menu-item-group>
               <el-menu-item index="3-3" @click="goPage('favorite')">会员收藏</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group>
+            </el-menu-item-group> -->
+        <!--    <el-menu-item-group>
               <el-menu-item index="3-4" @click="goPage('footprint')">会员足迹</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group>
+            </el-menu-item-group> -->
+         <!--    <el-menu-item-group>
               <el-menu-item index="3-5" @click="goPage('search')">搜索历史</el-menu-item>
-            </el-menu-item-group>
+            </el-menu-item-group> -->
             <el-menu-item-group>
-              <el-menu-item index="3-6" @click="goPage('opinion')">意见反馈</el-menu-item>
+              <el-menu-item index="3-6" @click="goPage('opinion')">意见反馈收集</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
 
           
-          <el-submenu index="4">
+     <!--     <el-submenu index="4">
             <template slot="title">
               <i class="el-icon-goods"></i>
-              <span>商场管理</span>
+              <span>房屋租售管理</span>
             </template>
-            <el-menu-item-group>
-              <el-menu-item index="4-1" @click="goPage('area')">行政区域</el-menu-item>
-            </el-menu-item-group>
             <el-menu-item-group>
               <el-menu-item index="4-2" @click="goPage('provider')">品牌生产商</el-menu-item>
             </el-menu-item-group>
@@ -79,25 +76,25 @@
               <el-menu-item index="4-7" @click="goPage('keywords')">关键字</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
-
+-->
 
           <el-submenu index="5">
             <template slot="title">
               <i class="el-icon-goods"></i>
-              <span>商品管理</span>
+              <span>房屋信息列表</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="5-1" @click="goPage('product-list')">商品列表</el-menu-item>
+              <el-menu-item index="5-1" @click="goPage('product-list')">已审核列表</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group>
-              <el-menu-item index="5-2" @click="goPage('product-put-on')">商品上架</el-menu-item>
+              <el-menu-item index="5-2" @click="goPage('product-put-on')">待审核列表</el-menu-item>
             </el-menu-item-group>
-            <el-menu-item-group>
+ <!--           <el-menu-item-group>
               <el-menu-item index="4-3" @click="goPage('product-comment')">商品评论</el-menu-item>
-            </el-menu-item-group>
-          </el-submenu>
+            </el-menu-item-group> -->
+          </el-submenu> 
 
-          <el-submenu index="6">
+<!--          <el-submenu index="6">
             <template slot="title">
               <i class="el-icon-goods"></i>
               <span>推广管理</span>
@@ -118,33 +115,33 @@
               <el-menu-item index="6-5" @click="goPage('group-buy-avtiviti')">团购活动</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
-
+-->
           <el-submenu index="7">
             <template slot="title">
               <i class="el-icon-goods"></i>
               <span>系统管理</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="7-1" @click="goPage('administrator')">管理员</el-menu-item>
+              <el-menu-item index="7-1" @click="goPage('administrator')">管理员列表</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group>
               <el-menu-item index="7-2" @click="goPage('notice-manager')">通知管理</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group>
-              <el-menu-item index="7-3" @click="goPage('operation-log')">操作日志</el-menu-item>
+              <el-menu-item index="7-3" @click="goPage('operation-log')">管理员个人信息</el-menu-item>
             </el-menu-item-group>
-            <el-menu-item-group>
+          <!--  <el-menu-item-group>
               <el-menu-item index="7-4" @click="goPage('role-manager')">角色管理</el-menu-item>
-            </el-menu-item-group>
+            </el-menu-item-group> 
             <el-menu-item-group>
               <el-menu-item index="7-5" @click="goPage('storage-manager')">存储管理</el-menu-item>
             </el-menu-item-group>
              <el-menu-item-group>
               <el-menu-item index="7-6" @click="goPage('privilege-manager')">权限管理</el-menu-item>
-            </el-menu-item-group>
+            </el-menu-item-group>  -->
           </el-submenu>
 
-
+<!--
            <el-submenu index="8">
             <template slot="title">
               <i class="el-icon-goods"></i>
@@ -162,8 +159,8 @@
             <el-menu-item-group>
               <el-menu-item index="8-4" @click="goPage('program-setting')">小程序配置</el-menu-item>
             </el-menu-item-group>
-          </el-submenu>
-
+          </el-submenu> 
+-->
            <el-submenu index="9">
             <template slot="title">
               <i class="el-icon-goods"></i>
@@ -176,7 +173,7 @@
               <el-menu-item index="9-2" @click="goPage('order-statistics')">订单统计</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group>
-              <el-menu-item index="9-3" @click="goPage('product-statistics')">商品统计</el-menu-item>
+              <el-menu-item index="9-3" @click="goPage('product-statistics')">房屋统计</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
 

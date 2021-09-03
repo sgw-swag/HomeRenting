@@ -2,7 +2,7 @@
 </style>
 <template>
   <div id="area">
-    <h1>行政区域</h1>
+<!-- <h1>行政区域</h1>-->
   </div>
 </template>
 

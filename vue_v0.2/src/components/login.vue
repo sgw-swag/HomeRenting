@@ -48,7 +48,7 @@ export default {
     // 调用store 存储
     ...mapMutations(['changeLogin']),
     login () {
-this.$axios.post(`/api/login`, this.loginForm).then(resp => {
+this.$axios.post(`/api/user/login`, this.loginForm).then(resp => {
     if(resp && resp.status === 200) {
         console.log('请求返回:', resp)
         let data = resp.data
