@@ -1,12 +1,13 @@
-package com.se.HomeRenting.example;
+package com.se.HomeRenting;
 
+import com.se.HomeRenting.example.Result;
+import com.se.HomeRenting.example.User;
+import com.se.HomeRenting.example.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.HtmlUtils;
+
+import java.util.List;
 
 
 /**
@@ -15,10 +16,12 @@ import org.springframework.web.util.HtmlUtils;
  */
 
 //接收前端发送的数据，通过调用 Service 获得处理后的数据并返回
-@Controller
+@RestController
 public class LoginController {
     @Autowired
     UserService userService;
+//    @Autowired
+//    UserDAO userDAO;
 
     @CrossOrigin
     @PostMapping(value = "/api/login")
@@ -28,10 +31,20 @@ public class LoginController {
         username = HtmlUtils.htmlEscape(username);
 
         User user = userService.get(username, requestUser.getPassword());
-        if (null == user) {
-            return new Result(400);
-        } else {
+        if (user != null) {
             return new Result(200);
+        } else {
+            return new Result(400);
         }
+    }
+
+    @RequestMapping("/getAllUser")
+    @ResponseBody
+    public List<User> findAll(){
+//        List<User> list = new ArrayList<>();
+//        list = userDAO.findAll();
+//        System.out.println(list);
+//        return list;
+        return userService.findAllUser();
     }
 }

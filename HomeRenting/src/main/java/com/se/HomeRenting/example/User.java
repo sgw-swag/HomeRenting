@@ -1,6 +1,5 @@
 package com.se.HomeRenting.example;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +13,6 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "users")
-@JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor

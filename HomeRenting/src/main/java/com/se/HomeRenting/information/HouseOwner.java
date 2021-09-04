@@ -1,8 +1,10 @@
 package com.se.HomeRenting.information;
 
 import com.se.HomeRenting.actions.Actions;
+import com.se.HomeRenting.example.User;
 import com.se.HomeRenting.operations.GetInfo;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.springframework.stereotype.Component;
 
@@ -14,10 +16,11 @@ import java.util.Map;
  */
 
 //房主
+@EqualsAndHashCode(callSuper = true)
 @Component
 @ToString
 @Data
-public class HouseOwner implements Actions, GetInfo {
+public class HouseOwner extends User implements Actions, GetInfo {
     private int owner_number;
     private String owner_falseName;
     private String owner_password;
