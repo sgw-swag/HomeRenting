@@ -1,5 +1,6 @@
-package com.se.HomeRenting.example;
+package com.se.HomeRenting.dao;
 
+import com.se.HomeRenting.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

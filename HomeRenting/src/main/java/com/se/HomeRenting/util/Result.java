@@ -1,4 +1,4 @@
-package com.se.HomeRenting.example;
+package com.se.HomeRenting.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

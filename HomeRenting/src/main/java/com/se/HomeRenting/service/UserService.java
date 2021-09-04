@@ -1,5 +1,7 @@
-package com.se.HomeRenting.example;
+package com.se.HomeRenting.service;
 
+import com.se.HomeRenting.dao.UserDAO;
+import com.se.HomeRenting.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

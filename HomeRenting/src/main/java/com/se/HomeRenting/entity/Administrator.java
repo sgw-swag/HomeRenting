@@ -1,8 +1,7 @@
-package com.se.HomeRenting.information;
+package com.se.HomeRenting.entity;
 
-import com.se.HomeRenting.actions.Actions;
-import com.se.HomeRenting.example.User;
-import com.se.HomeRenting.operations.GetInfo;
+import com.se.HomeRenting.util.Actions;
+import com.se.HomeRenting.util.GetInfo;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

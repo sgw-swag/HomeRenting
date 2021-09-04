@@ -1,4 +1,4 @@
-package com.se.HomeRenting;
+package com.se.HomeRenting.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;

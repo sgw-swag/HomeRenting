@@ -1,4 +1,4 @@
-package com.se.HomeRenting.actions;
+package com.se.HomeRenting.util;
 
 /**
  * @author ShenGW

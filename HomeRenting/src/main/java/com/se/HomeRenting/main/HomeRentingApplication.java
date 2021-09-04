@@ -1,4 +1,4 @@
-package com.se.HomeRenting;
+package com.se.HomeRenting.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

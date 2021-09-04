@@ -1,4 +1,4 @@
-package com.se.HomeRenting.information;
+package com.se.HomeRenting.entity;
 
 import lombok.Data;
 import lombok.ToString;

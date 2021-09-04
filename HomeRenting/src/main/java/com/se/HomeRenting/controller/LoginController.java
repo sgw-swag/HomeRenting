@@ -1,8 +1,8 @@
-package com.se.HomeRenting;
+package com.se.HomeRenting.controller;
 
-import com.se.HomeRenting.example.Result;
-import com.se.HomeRenting.example.User;
-import com.se.HomeRenting.example.UserService;
+import com.se.HomeRenting.util.Result;
+import com.se.HomeRenting.entity.User;
+import com.se.HomeRenting.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.HtmlUtils;
