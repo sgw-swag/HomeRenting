@@ -1,5 +1,6 @@
 package com.se.HomeRenting.Controller;
 
+import com.se.HomeRenting.Dao.UserDao;
 import com.se.HomeRenting.Entity.User;
 import com.se.HomeRenting.Result.result;
 import com.se.HomeRenting.Service.UserService;
@@ -8,26 +9,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.HtmlUtils;
 
-@Controller
+@RestController
+@RequestMapping(path="/api/user")
 public class LoginController {
 
     @Autowired
     UserService userService;
 
-    @CrossOrigin
-    @PostMapping(value = "/api/login")
-    @ResponseBody
-    public result login(@RequestBody User requestUser) {
-        String username = requestUser.getUsername();
-        username = HtmlUtils.htmlEscape(username);
+//    @PostMapping(value = "/login")
+//    @ResponseBody
+//    public result login(@RequestBody User requestUser) {
+//
+//    }
 
-        User user = userService.get(username, requestUser.getPassword());
-        if (null == user) {
-            return new result(400);
-        } else {
-            return new result(200);
-        }
-    }
 }
 
 

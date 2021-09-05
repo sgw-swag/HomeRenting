@@ -1,9 +1,11 @@
 package com.se.HomeRenting.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
+import lombok.*;
+import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 
+@Data
 @Entity
 @Table(name = "user")
 @JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
@@ -11,33 +13,24 @@ import javax.persistence.*;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    int id;
 
-    String username;
-    String password;
+    private String userid;
+    //用户编号
 
-    public int getId() {
-        return id;
-    }
+    @NotEmpty(message = "用户昵称不能为空")
+    private String usernickname;
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    private String userpassword;
 
-    public String getUsername() {
-        return username;
-    }
+    private String username;
+    //用户真实姓名
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    private String usernumber;
+    //用户身份证号码
 
-    public String getPassword() {
-        return password;
-    }
+    private String usersex;
+    //用户性别
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    private String userphone;
+    //用户电话号码
 }
