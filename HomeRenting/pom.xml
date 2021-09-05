@@ -62,7 +62,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
 				<version>2.4.5</version>
+=======
+>>>>>>> 12935a37aed6129e857172684a158a16da1fdfac
 				<configuration>
 					<excludes>
 						<exclude>

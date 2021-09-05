@@ -19,6 +19,7 @@ public class UserService {
     @Autowired
     UserDAO userDAO;
 
+<<<<<<< HEAD
     public boolean isExist(String userphone) {
         User user = getByPhone(userphone);
         return null!=user;
@@ -30,6 +31,19 @@ public class UserService {
 
     public User get(String userPhone, String userpassword){
         return userDAO.getByUserphoneAndUserpassword(userPhone, userpassword);
+=======
+    public boolean isExist(String username) {
+        User user = getByName(username);
+        return null!=user;
+    }
+
+    public User getByName(String username) {
+        return userDAO.findByUsername(username);
+    }
+
+    public User get(String username, String password){
+        return userDAO.getByUsernameAndPassword(username, password);
+>>>>>>> 12935a37aed6129e857172684a158a16da1fdfac
     }
 
     public void add(User user) {
