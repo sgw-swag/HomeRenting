@@ -15,13 +15,19 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
+          <factory-entry name="HomeRenting" value="8510dbc8-1c99-4ea5-aa6d-4e1f5d3c43a5" />
           <factory-entry name="entityManagerFactory" value="8ee7dc67-4641-4a44-9e9c-be6e715f8c4e" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/se/HomeRenting/HomeRentingApplication.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/se/HomeRenting/main/HomeRentingApplication.java</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
