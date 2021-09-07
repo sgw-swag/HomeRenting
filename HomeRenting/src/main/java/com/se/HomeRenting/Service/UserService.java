@@ -1,7 +1,7 @@
 package com.se.HomeRenting.Service;
 
 import com.se.HomeRenting.Entity.User;
-import com.se.HomeRenting.Dao.UserDao;
+import com.se.HomeRenting.Dao.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class UserService {
     @Autowired
-    UserDao userDAO;
+    UserDAO userDAO;
 
 
     public List<User> findAll(){
